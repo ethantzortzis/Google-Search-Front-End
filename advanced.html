@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <style>
-            h2{
-                color: red;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 100;
-            }
-        </style>
         <link rel="stylesheet" href="index.css">  
         <title>Advanced Search</title>
     </head>
-    <body>
-        <h2>Advanced Search</h2>
-        <hr style="border: none; border-top: 1px solid #dcdcdc; width: 100%;">
+
+    <body class="advBody">
         <div class="link-container">
             <div class="link">
                 <a href="index.html">Google Search</a>
@@ -22,17 +14,35 @@
                 <a href="https://images.google.com/">Image Search</a>
             </div>
         </div>
-        <form action="https://www.google.com/search">
-                <div class="asBar">
-                    <input type="text" name="as_q">
-                    <input type="text" name="as_epq">
-                    <input type="text" name="as_oq">
-                    <input type="text" name="as_eq">
-                </div>
-                
-                <div class="asButton">
-                    <input type="submit" value="Advanced Search">
-                </div>
+        
+        <h2>Advanced Search</h2>
+        <hr>
+        <h4>Find pages with...</h4>
+        
+        <form class="advform" action="https://www.google.com/search">
+            <div class="forms">
+                <label>all these words:</label>
+                <input type="text" name="as_q" id="as_q">
+            </div>
+
+            <div class="forms">
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq" id="as_epq">
+            </div>
+
+            <div class="forms">
+                <label>any of these words:</label>
+                <input type="text" name="as_oq" id="as_oq">
+            </div>
+
+            <div class="forms">
+                <label>none of these words:</label>
+                <input type="text" name="as_eq" id="as_eq">
+            </div>
+
+            <div class="asButton">
+                <input type="submit" value="Advanced Search">
+            </div>
         </form>
     </body>
 </html>

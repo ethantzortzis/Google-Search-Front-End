@@ -1,23 +1,24 @@
-/*Google Search Page*/
-
-body {
+/* Google Search Page*/
+.googleBody {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 540px;
-    margin: 0px;
+    height: 85vh; 
+    margin: 0;
+    background-color: #fff;
 }
 
 .googleLogo {
-    margin-bottom: 15px; /* Adjust spacing between logo and search bar */
+    margin-bottom: 20px; /* Adjust spacing between logo and search bar */
 }
 
 .googleLogo img {
-    width: 250px; 
-    height: auto; 
+    width: 250px;
+    height: auto;
 }
 
+/* Center search bar */
 .searchBar {
     display: flex;
     justify-content: center;
@@ -28,32 +29,35 @@ body {
     border-radius: 24px;
     background-color: #fff;
     padding: 0 16px;
-    transition: background-color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .searchBar:hover {
     box-shadow: 0 1px 8px rgba(32, 33, 36, 0.4);
 }
 
+/* Search input field */
 .searchBar input[type="text"] {
     width: 100%;
     border: none;
     outline: none;
     font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
-.button{
-    margin-top: 20px;
+/* Buttons container centered */
+.button {
     display: flex;
-    width: 140px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.button input[type="submit"]{
-    width: 100%;
+.button input[type="submit"] {
+    width: 140px;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
-    color: #000000;
+    color: #000;
     font-size: 14px;
     padding: 10px 20px;
     margin: 0 5px;
@@ -63,10 +67,10 @@ body {
 
 .button input[type="submit"]:hover {
     border: 1px solid #e8e8e8;
-    border-radius: 4px;
     box-shadow: 1px 1px 1px rgba(32, 33, 36, 0.4);
 }
 
+/* Links at the top-right corner */
 .link-container {
     display: flex;
     gap: 20px;
@@ -76,16 +80,91 @@ body {
     margin: 17px;
 }
 
-.link a{
-    color: #000000;
+.link a {
+    color: #000;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
-.link:hover a{
+.link:hover a {
     text-decoration: underline;
 }
 
-/*Advanced Search Page*/
+
+/* Advanced Search */
+h2{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+hr{
+    margin-left:-50px;
+    border: none; 
+    border-top: 1px solid #dcdcdc; 
+    width: 2000px;
+}
+
+.advBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left; 
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.advform {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.forms{
+    display: flex;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.forms input[type="text"] {
+    display: flexbox;
+    flex-direction: column;
+    width: 70%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 1px;
+}
+
+.forms label {
+    width: 25%;
+    text-align: left;
+}
+
+
+.asButton {
+    margin-top: 10px;
+    display: flex;
+}
+
+.asButton input[type="submit"] {
+    background-color: #4285F4;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 2px;
+}
+
+.asButton input[type="submit"]:hover {
+    background-color: #357AE8;
+}
 
