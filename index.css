@@ -1,3 +1,5 @@
+/*Google Search Page*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -84,3 +86,6 @@ body {
 .link:hover a{
     text-decoration: underline;
 }
+
+/*Advanced Search Page*/
+
