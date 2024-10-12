@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
         <link rel="stylesheet" href="index.css">  
         <title>Advanced Search</title>
     </head>
@@ -14,31 +15,42 @@
         
         <h2>Advanced Search</h2>
         <hr>
-        <h4>Find pages with...</h4>
+        <div class="heading-container">
+            <h4>Find pages with...</h4>
+            <h5>To do this in the search box</h5>
+        </div>
         
         <form class="advform" action="https://www.google.com/search">
             <div class="forms">
                 <label>all these words:</label>
                 <input type="text" name="as_q" id="as_q"> 
-                <!-- <label>Type the important words:  tricolor rat terrier</label>  -->
+                <div class="formInstruction">
+                    <label>Type the important words: <label class="fontDiff">tricolor rat terrier</label></label>  
+                </div>  
             </div>
-
+              
             <div class="forms">
                 <label>this exact word or phrase:</label>
                 <input type="text" name="as_epq" id="as_epq">
-                <!-- <label>Put exact words in quotes:  "rat terrier"</label> -->
+                <div class="formInstruction">
+                    <label>Put exact words in quotes: <label class="fontDiff">"rat terrier"</label></label> 
+                </div>    
             </div>
-
+            
             <div class="forms">
                 <label>any of these words:</label>
                 <input type="text" name="as_oq" id="as_oq">
-                <!-- <label>Type OR between all the words you want:  miniature OR standard</label> -->
+                <div class="formInstruction">
+                    <label>Type OR between all the words you want: <label class="fontDiff">miniature OR standard</label></label> 
+                </div>
             </div>
-
+           
             <div class="forms">
                 <label>none of these words:</label>
                 <input type="text" name="as_eq" id="as_eq">
-                <!-- <label>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</label> -->
+                <div class="formInstruction">
+                    <label>Put a minus sign just before words you don't want: <label class="fontDiff">-rodent, -"Jack Russell"</label></label> 
+                </div>
             </div>
 
             <div class="asButton">

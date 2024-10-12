@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="index.css">  
         <title>Image Search</title>
     </head>
     <body class="googleBody">
         <div class="googleLogo">
-            <img src="GoogleLogo.jpg" alt="Google logo">
-            <div class="imagesText">
-                Images
-            </div>
+            <img src="Google_Images.png" alt="Google Images logo">
         </div>
         
         <form action="https://www.google.com/search" method="get">
             <div class="searchBar">
             <input type="hidden" name="tbm" value="isch">
-                <input type="text" name="q">
+            <i class="fas fa-magnifying-glass" style="color: #9aa0a6; padding-right: 12px;"></i>
+                <input type="text" name="q" placeholder="Search Images">
             </div>
         </form>   
  
